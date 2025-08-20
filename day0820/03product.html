@@ -31,11 +31,15 @@
             font-size: 20px;
             color: green;
         }
+
+        .ordercenter{
+            margin-left: 215px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>상품 주문서</h1>
+        <h1>상품 주문서(커피 원두)</h1>
         <form action="">
             <fieldset>
                 <legend>개인 정보</legend>
@@ -63,10 +67,31 @@
                     </li>
                     <li>
                         <label for="memo" class="title">메 모</label>
-                        <textarea id="memo" rows="3" cols="40">
+                        <textarea id="memo" rows="3" cols="40"></textarea>
                     </li>
                 </ul>
             </fieldset>
+            <fieldset>
+                <legend>주문 정보</legend>
+                <ul>
+                    <li>
+                        <label for="anti"><input type="checkbox" id="anti"/> <b>과테말라 안티구아</b> (100g)</label>
+                        <label for="num1"><input type="number" id="num1" max="10" min="1" value="0" style="width:55px;"/>개</label>
+                    </li>
+                    <li>
+                        <label for="mandel"><input type="checkbox" id="mandel"/> <b>인도네시아 만델링</b> (100g)</label>
+                        <label for="num2"><input type="number" id="num2" max="10" min="1" value="0" style="width:55px;"/>개</label>
+                    </li>
+                    <li>
+                        <label for="moka"><input type="checkbox" id="moka"/> <b>맥심 모카</b> (100g)</label>
+                        <label for="num3"><input type="number" id="num3" max="10" min="1" value="0" style="width:55px;"/>개</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="ordercenter">
+                <input type="submit" value="주문하기"/> &nbsp;
+                <input type="reset" value="재작성"/>
+            </div>
         </form>
 
     </div>
