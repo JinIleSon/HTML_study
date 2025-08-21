@@ -3,15 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> html </title>
+    <title> testfood.html </title>
 <style>
- 
+    img {
+        width: 75px;
+        
+        padding: 2px;
+    }
+    h2 {
+        font-size: 0.8em;
+    }
+    body {
+        text-align: center;
+    }
+    div.allfood {
+        border: 1px solid black;
+        width: 1000px;
+        margin-left: 20px;
+    }
+    div.food {
+        float:left;
+        width:305px; 
+        height:300px; 
+        border: 1px solid black; 
+        margin:20px;
+    }
    
 </style>    
 </head>
 <body>
     <div class="allfood">
-        <h2>해당하는 음식을 종류별로 드레그 해서 채워보세요.</h2>
+        <h2>해당하는 음식을 종류별로 드래그 해서 채워보세요.</h2>
         <img src="imagefood/1.jpg" alt="비빔밥"  id="kor1"/>
         <img src="imagefood/2.jpg" alt="전복죽"  id="kor2" />
         <img src="imagefood/3.jpg" alt="빈대떡"  id="kor2"  />
@@ -21,16 +43,17 @@
         <img src="imagefood/7.jpg" alt="짜장면"  id="ch1"  />
         <img src="imagefood/8.jpg" alt="탕수육"  id="ch2" />
         <img src="imagefood/9.jpg" alt="생선회"   id="ch3" />
+        <p></p>
+
     </div>
-    
-        <div class="food">
-            <h2>한식</h2>
-        </div>
-        <div class="food">
-            <h2>분식</h2>
-        </div>
-        <div class="food">
-            <h2>중식</h2>
-        </div>
+    <div class="food">
+        <h2>한식</h2>
+    </div>
+    <div class="food">
+        <h2>분식</h2>
+    </div>
+    <div class="food">
+        <h2>중식</h2>
+    </div>
 </body>
 </html>
