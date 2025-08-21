@@ -5,12 +5,19 @@
 <title></title>
 <link rel="stylesheet" href="css/style.css">
 </head> 
+<style>
+	p { color:cadetblue; }
+	del { color:red; font-size:10pt; }
+	.price { text-align: center; }
+	
+	
+</style>
 <body> 
 	<!-- header ------------------------------------------ -->
 	<header>
 		<div class="container">
 			<div class="logo">
-                <a href="index.html"> <img src="image/home.gif">손진일 </a>
+                <a href="index.html"> <img src="image/myhome.png" width="48px"> 손진일 </a>
             </div>
 			<ul class="sidemenu">
 				<li><a href="index.html">Home</a></li>
@@ -50,7 +57,7 @@
 					<a href="">상품정보</a>
 					<span class="dropmenu">
 						<span> <a href="mycoffee.html">mycoffee</a> </span>
-						<span> <a href="#">myproduct</a> </span>
+						<span> <a href="myproduct.html">myproduct</a> </span>
 					</span>
 				</li>
 
@@ -71,10 +78,34 @@
 	<!-- //nav -->
 	
 	<!-- section9 --------------------------------------------- -->
-	<section id="section9">
-		<div class="container">
-			
-            <img src="./image/main_4.jpg" alt="">
+	<section id="section9" class="price">
+		<div style="width: 600px;">
+			<img src="./image/main_4.jpg" width="600"> <br/>
+			<h1 align="left" style="color:cadetblue; margin-top: 13px; margin-bottom:13px;"> ☕ Weekend Coffee Price </h1>
+			<ul type="square">
+				<li style="font-weight: bold;">아메리카노(americano) &nbsp;3,500원</li>
+				<br>
+				<p align="left" style="margin-top: 10px; margin-bottom:10px;">(할인 적용 시 2,500원)</p>
+				<li style="font-weight: bold;">카페라떼(cafe latte) &nbsp;5,500원</li>
+				<br>
+				<p align="left" style="margin-top: 10px; margin-bottom:10px;">(할인 적용 시 2,500원)</p>
+				<li style="font-weight: bold;">카푸치노(capucchino) &nbsp;6,000원</li>
+				<br>
+				<p align="left" style="margin-top: 10px; margin-bottom:10px;">(할인 적용 시 2,500원)</p>
+			</ul>
+			<hr color="cadetblue" size="2">
+			<h1 align="left" style="color:cadetblue; margin-top: 13px; margin-bottom:13px;"> ☕ Weekdays Coffee Price </h1>
+			<ul type="square">
+				<li style="font-weight: bold;">아메리카노(americano) <del>&nbsp;3,500원&nbsp;</del>&nbsp;&nbsp;2,500원</li>
+				<br>
+				<p align="left" style="margin-top: 10px; margin-bottom:10px;">(할인 적용 시 2,500원)</p>
+				<li style="font-weight: bold;">카페라떼(cafe latte) <del>&nbsp;5,500원&nbsp;</del>&nbsp;&nbsp;4,500원</li>
+				<br>
+				<p align="left" style="margin-top: 10px; margin-bottom:10px;">(할인 적용 시 2,500원)</p>
+				<li style="font-weight: bold;">카푸치노(capucchino) <del>&nbsp;6,000원&nbsp;</del>&nbsp;&nbsp;5,000원</li>
+				<br>
+				<p align="left" style="margin-top: 10px; margin-bottom:10px;">(할인 적용 시 2,500원)</p>
+			</ul>
 		</div>
 	</section>
 	<div class="clear"></div>
