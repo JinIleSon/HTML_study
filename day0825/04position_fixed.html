@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 03position_absolute.html </title>
+    <style>
+        .container{
+            width: 300px;
+            height: 311px;
+            border: 1px solid tomato;
+            position: relative;
+        }
+
+        .box{
+            width: 100px;
+            background-color: lightgray;
+            border: 1px solid black;
+            margin-bottom: 3px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .static-box{
+            background-color: cyan;
+            position: static;
+        }
+        .absolute-box{
+            background-color: lightgreen;
+            position: absolute;
+            top: 80px;
+            left: 150px;
+        }
+        .fixed-box{
+            background-color: #abcdef;
+            position: fixed;
+            top: 80px;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h3>03position_absolute.html 문서</h3>
+    <div class="container">
+        <div class="box"> 첫번째 요소</div>
+        <div class="box fixed-box"> 두번째 요소</div>
+            <!-- 절대위치는 먼저 선행조건 위치를 relative설정 -->
+            <!-- 절대위치는 먼저 선행조건 위치를 relative설정 -->
+        <div class="box"> 세번째 요소</div>
+    </div>
+</body>
+</html>
