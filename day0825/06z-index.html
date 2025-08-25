@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 06z-index.html </title>
+</head>
+    <style>
+        *{font-size: 23pt;}
+
+        .box{
+            width: 200px; height: 150px;
+            border: 2px solid black;
+            background-color: lightgray;
+            margin-bottom: 3px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .first{
+            background-color: yellow;
+            position: relative;
+            z-index: 1;
+            top: 40px;
+            left: 50px;
+        }
+        .second{
+            background-color: tomato;
+        }
+        .third{
+            background-color: #abcdef;
+            position: absolute;
+            z-index: 2;
+            top: 220px;
+            left: 150px;
+        }
+    </style>
+<body>
+    <h2> 06z-index.html </h2>
+
+    <div class="box first"> 1 </div>
+    <div class="box second"> 2 </div>
+    <div class="box third"> 3 </div>
+</body>
+</html>
