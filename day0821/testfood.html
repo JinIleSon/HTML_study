@@ -30,9 +30,22 @@
     }
    
 </style>    
+
+<script>
+    var gate = 1234;
+
+    function drag(food) {
+
+    }// end
+
+    function drop(food) {
+        alert("드롭 함수처리 프로시저");
+    }// end
+</script>
+
 </head>
 <body>
-    <div class="allfood">
+    <div class="allfood" ondrag="" ondragover="">
         <h2>해당하는 음식을 종류별로 드래그 해서 채워보세요.</h2>
         <img src="imagefood/1.jpg" alt="비빔밥"  id="kor1"/>
         <img src="imagefood/2.jpg" alt="전복죽"  id="kor2" />
@@ -46,13 +59,13 @@
         <p></p>
 
     </div>
-    <div class="food">
+    <div class="food" ondrag="" ondragover="">
         <h2>한식</h2>
     </div>
-    <div class="food">
+    <div class="food" ondrag="" ondragover="">
         <h2>분식</h2>
     </div>
-    <div class="food">
+    <div class="food" ondrag="" ondragover="">
         <h2>중식</h2>
     </div>
 </body>
