@@ -7,15 +7,37 @@
     <style>
         .container{
             border: 1px solid gray;
-            height: 600px;
+            height: 480px;
         }
 
         img{
             width: 350px; height: 200px;
         }
+        
+        .prod-list .caption {
+            position:absolute;
+            top:200px;
+            width: 350px;
+            height: 200px;
+            padding-top: 20px;
+            background: rgba(0,0,0,0.456);
+            transition: all 0.8s ease-in-out;
+            opacity: 0.3;
+            z-index: 1;
+        }
+
+        .prod-list li:hover .caption{
+            opacity: 0.5;
+            transform: translateY(-200px);
+        }
 
         .prod-list li {
-            font-size: 12pt;
+            position: relative;
+            list-style: none;
+            float:left;
+            padding: 0;
+            margin: 10px;
+            overflow: hidden;
         }
 
         .caption {
@@ -28,7 +50,7 @@
     <b> 12positiontransition.html </b> <br>
 
     <div class="container">
-        <ul class="prod-list" type="none">
+        <ul class="prod-list">
             <li>
                 <img src="./images/images1.jpg" alt="제품1">
                 <div class="caption">
